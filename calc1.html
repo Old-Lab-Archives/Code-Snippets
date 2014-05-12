@@ -2,35 +2,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Web Calculator Testing</title>
+</head>
+<body>
     <script language="javascript" type="text/javascript">
-        function Add_onselect() {
-            value1 + value2;
+        function Submit_onclick() {
+            if (id = "Add") {
+                var a = value1 + value2;
+                document.getElementById("Add").innerHTML = a;
+            }
+            if (id = "Subtract") {
+                var b = value1 - value2;
+                document.getElementById("Subtract").innerHTML = b;
+            }
+            if (id = "Multiply") {
+                var c = value1 * value2;
+                document.getElementById("Multiply").innerHTML = c;
+            }
+            if (id = "Divide") {
+                var d = value1 / value2;
+                document.getElementById("Divide").innerHTML = d;
+            }
         }
-
-        function Subtract_onselect() {
-            value1 - value2;
-        }
-
-        function Multiply_onselect() {
-            value1 * value2;
-        }
-
-        function Divide_onselect() {
-            value1 / value2;
-        }
-
-</script>
-    </head>
-    <body>
-        Enter value 1: <input type="number" name="value1" value="value1" /> <br />
-        Enter value 2: <input type="number" name="value2" value="value2" /> <br />
-        Select operation: <select>
-                              <option value="Add" onselect="Add_onselect()">Addition</option>
-                              <option value="Subtract" onselect="Subtract_onselect()">Subtraction</option>
-                              <option value="Multiply" onselect="Multiply_onselect()">Multiplication</option>
-                              <option value="Divide" onselect="Divide_onselect()">Division</option>
+    </script>
+    Enter value 1: <input type="number" id="value1" name="value1" value="value1" /> <br />
+    Enter value 2: <input type="number" id="value2" name="value2" value="value2" /> <br />
+    Select operation: <select>
+        <option value="Add" id="Add">Addition</option>
+        <option value="Subtract" id="Subtract">Subtraction</option>
+        <option value="Multiply" id="Multiply">Multiplication</option>
+        <option value="Divide" id="Divide">Division</option>
     </select>
-        <br />
-        <button value="Submit" onclick="Submit_onclick()">Submit</button>
-    </body>
+    <br />
+    <button value="Submit" onclick="Submit_onclick()">Submit</button>
+</body>
     </html>
