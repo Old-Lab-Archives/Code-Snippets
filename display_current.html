@@ -1,0 +1,20 @@
+<html>
+<head> <title> Displaying current date and time </title> </head>
+<body>
+<h1> Current Date and Time </h1>
+<p>
+<script language = "Javascript">
+meow = new Date();
+localtime = meow.toString();
+utctime = meow.toGMTString();
+document.write("<b>Local Time:</b>" + localtime + "<br>");
+document.write("<b>UTC Time:</b>" + utctime + "</p>");
+hours = meow.getHours();
+mins = meow.getMinutes();
+secs = meow.getSeconds();
+document.write("<font size='+5'>");
+document.write(hours + ":" + mins + ":" + secs);
+document.write("</font>");
+</script>
+</body>
+</html>
