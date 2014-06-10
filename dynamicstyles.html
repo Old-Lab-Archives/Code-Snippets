@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>dynamic styles</title>
+<script language="javascript">
+function ChangeMeowMind()
+{
+i=document.MeowFormation.heading.selectedIndex;
+MeowHeadColor=document.MeowFormation.heading.options[i].value;
+document.getElementById("MeowMind").style.color=MeowHeadColor;
+}
+function ChangeMeowBody()
+{
+i=document.MeowFormation.body.selectedIndex;
+MeowBodyColor=document.MeowFormation.body.options[i].value;
+document.getElementById("MeowBody").style.color=MeowBodyColor;
+}
+</head>
+<body>
+<h1 id="MeowMind">
+Dynamic Control Style Colors</h1>
+<hr>
+<p id="MeowBody">
+Select any color
+</p>
+<form name="MeowFormation">
+<b>Heading color:</b>
+<select name="heading" onChange="ChangeMeowMind();">
+<option value="black">black</option>
+<option value="red">red</option>
+<option value="blue">blue</option>
+<option value="green">green</option>
+<option value="yellow">yellow</option>
+</select>
+<br>
+<b>Body text color: </b>
+<select name="body" onChange="ChangeMeowBody();">
+<option value="black">black</option>
+<option value="red">red</option>
+<option value="blue">blue</option>
+<option value="green">green</option>
+<option value="yellow">yellow</option>
+</select>
+</form>
+</body>
+</html>
