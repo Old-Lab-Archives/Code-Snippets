@@ -3,12 +3,12 @@
 <body>
 <h1> Current Date and Time </h1>
 <p>
-<script language ="Javascript">
+<script language = "Javascript">
 meow = new Date();
 localtime = meow.toString();
-utctime = meow.toGMTString();
+gmttime = meow.toGMTString();
 document.write("<b>Local Time:</b>" + localtime + "<br>");
-document.write("<b>UTC Time:</b>" + utctime + "</p>");
+document.write("<b>GMT Time:</b>" + gmttime + "<br>");
 hours = meow.getHours();
 mins = meow.getMinutes();
 secs = meow.getSeconds();
