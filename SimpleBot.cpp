@@ -4,7 +4,7 @@
 int main()
 {
 std::string MeowBot[]={"Meow! Meow!","Yo! I'm listening you","Keep talking buddy!","Woo! Interesting","Talk more"};
-MeowBotRandom((unsigned) time(NULL));
+int MeowBotRandom((unsigned) time(NULL));
 std::string MeowInput="";
 std::string MeowResponse="";
 while(1)
